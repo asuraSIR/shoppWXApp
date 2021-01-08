@@ -1,0 +1,30 @@
+/* pages/goods_list/index.wxss */
+.synth_tab .goods_item {
+  display: flex;
+  border-bottom: 1rpx solid #cccccc;
+}
+.synth_tab .goods_item .goods_img-wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.synth_tab .goods_item .goods_img-wrap image {
+  width: 70%;
+}
+.synth_tab .goods_item .goods_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.synth_tab .goods_item .goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.synth_tab .goods_item .goods_info_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
