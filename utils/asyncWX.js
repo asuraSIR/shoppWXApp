@@ -1,3 +1,6 @@
+/**
+ * Promise 形式的方法
+ */
 export const getSetting=()=>{
     return new Promise((resolve,reject)=>{
         wx.getSetting({
@@ -7,7 +10,6 @@ export const getSetting=()=>{
             fail: (err)=>{
                 reject(err);
             },
-            complete: ()=>{}
         });
     })
 }
@@ -20,7 +22,6 @@ export const chooseAddress=()=>{
             fail: (err)=>{
                 reject(err);
             },
-            complete: ()=>{}
         });
     })
 }
@@ -33,7 +34,6 @@ export const openSetting=()=>{
             fail: (err)=>{
                 reject(err);
             },
-            complete: ()=>{}
         });
     })
 }
